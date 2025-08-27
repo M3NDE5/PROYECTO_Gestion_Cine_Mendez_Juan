@@ -17,7 +17,7 @@ usuario.post('/ingreso', async (req, res)=>{
   }
 })
 
-// OBTENER USUARIOS DE LA BASE DE DAT
+// OBTENER USUARIOS DE LA BASE DE DATOS
 usuario.get('/obtener/:nombre', async(req, res)=>{
     try{
         const result = await db.collection('usuarios').find({usuario: req.params.nombre}).toArray();
