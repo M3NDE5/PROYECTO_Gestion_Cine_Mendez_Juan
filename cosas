@@ -1,0 +1,29 @@
+<div class="main-content">
+    <div class="content-box">
+      <div class="top-movies">
+        <h3>TOP PELICULAS</h3>
+        <div class="movie-cards">
+          <div class="movie-card"></div>
+          <div class="movie-card"></div>
+          <div class="movie-card"></div>
+          <div class="movie-card"></div>
+        </div>
+      </div>
+
+      <div class="rooms">
+        <h3>Salas</h3>
+        <div class="room-cards">
+          <div class="room-card">
+            <h4>Sala 1</h4>
+            <p>Puestos: 40</p>
+            <p>Tamaño: 80m3</p>
+          </div>
+          <div class="room-card">
+            <h4>Sala 3</h4>
+            <p>Puestos: 40</p>
+            <p>Tamaño: 80m3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

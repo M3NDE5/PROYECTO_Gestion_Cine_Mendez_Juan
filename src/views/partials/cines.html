@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Cines</title>
+  <link rel="stylesheet" href="/css/cines.css">
+</head>
+<body>
+  <div class="header-cines">
+  <div>CINES</div>
+  <button class="add-button" onclick="openCineModal()">+</button>
+</div>
+
+<div class="list-container" id="listaCines">
+  
+</div>
+
+<!-- Modal para agregar cine -->
+<div id="cineModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeCineModal()">&times;</span>
+    <h2 style="color: black;">Agregar Cine</h2>
+
+    <div class="input-group">
+      <label for="codigoCine" style="color: black;">Código:</label>
+      <input type="text" id="codigoCine">
+    </div>
+
+    <div class="input-group">
+      <label for="nombreCine" style="color: black;">Nombre:</label>
+      <input type="text" id="nombreCine">
+    </div>
+
+    <div class="input-group">
+      <label for="direccionCine" style="color: black;">Dirección:</label>
+      <input type="text" id="direccionCine">
+    </div>
+
+    <div class="input-group">
+      <label for="ciudadCine" style="color: black;">Ciudad:</label>
+      <input type="text" id="ciudadCine">
+    </div>
+
+    <button class="submit-button" onclick="agregarCine()">✓</button>
+  </div>
+</div>
+
+  <script src="/src/js/cines.js"></script>
+</body>
+</html>

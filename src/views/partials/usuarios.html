@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/usuarios.css">
+  <title>Lista de Personas</title>
+</head>
+<body>
+
+  <div class="header">
+  <div>LISTA DE PERSONAS</div>
+  <button class="add-button" onclick="openModal()">+</button>
+  <button id="btn-lista">lista</button>
+</div>
+
+<div class="list-container" id="listaPersonas">
+    
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>INGRESO</h2>
+    <div class="input-group">
+      <label for="nombreUsuario">Nombre Usuario:</label>
+      <input type="text" id="nombreUsuario">
+    </div>
+    <div class="input-group">
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena">
+    </div>
+    <button class="submit-button" onclick="agregarPersona()">✓</button>
+  </div>
+</div>
+
+
+<div id="modal-actualizar" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModalActualizar()">&times;</span>
+    <h2>Actualizar Usuario</h2>
+    <div class="input-group">
+      <label for="emailAnterior">Correo Actual:</label>
+      <input type="text" id="emailAnterior" disabled>
+    </div>
+    <div class="input-group">
+      <label for="nuevoEmail">Nuevo Correo:</label>
+      <input type="text" id="nuevoEmail">
+    </div>
+    <button class="submit-button" onclick="guardarActualizacion()">Guardar</button>
+  </div>
+</div>
+</body>
+</html>

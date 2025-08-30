@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #5a5a5a;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.image-box {
+    padding: 20px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.image-box img {
+    width: 150px;
+    height: auto;
+}
+
+.subtitle {
+    font-size: 18px;
+    letter-spacing: 1px;
+}

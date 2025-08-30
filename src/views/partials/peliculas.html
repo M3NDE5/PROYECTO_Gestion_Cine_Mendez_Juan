@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Películas</title>
+  <link rel="stylesheet" href="/css/peliculas.css">
+</head>
+<body>
+    
+  <div id="contenedorPeliculas"></div>
+  <div class="botones">
+    <button onclick="abrirModal('modalCrear')">CREAR</button>
+    <button onclick="abrirModal('modalEliminar')">ELIMINAR</button>
+    <button onclick="abrirModal('modalActualizar')">ACTUALIZAR</button>
+  </div>
+
+
+<!-- Modal Crear Película -->
+<div class="modal" id="modalCrear">
+  <div class="modal-content">
+    <h3>Crear Película</h3>
+    <input type="text" id="crearCodigo" placeholder="Código">
+    <input type="text" id="crearTitulo" placeholder="Título">
+    <textarea id="crearSinopsis" placeholder="Sinopsis"></textarea>
+    <input type="text" id="crearPoster" placeholder="URL del Póster">
+    <input type="text" id="crearTrailer" placeholder="URL del Tráiler">
+    <input type="text" id="crearReparto" placeholder="Reparto">
+    <input type="text" id="crearClasificacion" placeholder="Clasificación (Ej. PG-13)">
+    <input type="text" id="crearIdioma" placeholder="Idioma">
+    <input type="text" id="crearDirector" placeholder="Director">
+    <input type="text" id="crearDuracion" placeholder="Duración (Ej. 1h 50m)">
+    <input type="text" id="crearGenero" placeholder="Género (Ej. Aventura, Comedia)">
+    <input type="date" id="crearFechaEstreno" placeholder="Fecha de estreno">
+    
+    <button onclick="crearPelicula()">Guardar</button>
+    <button onclick="cerrarModal('modalCrear')">Cancelar</button>
+  </div>
+</div>
+
+
+  <!-- Modal Eliminar -->
+  <div class="modal" id="modalEliminar">
+    <div class="modal-content">
+      <h3>Eliminar Película</h3>
+      <input type="text" placeholder="Código o Título" id="codEliminar">
+      <button onclick="eliminar()">Eliminar</button>
+      <button onclick="cerrarModal('modalEliminar')">Cancelar</button>
+    </div>
+  </div>
+
+  
+<!-- Modal Actualizar Película -->
+<div class="modal" id="modalActualizar">
+  <div class="modal-content">
+    <h3>Actualizar Película</h3>
+    <input type="text" id="actualizarCodigo" placeholder="Código de la película a actualizar">
+    <input type="text" id="actualizarTitulo" placeholder="Nuevo título">
+    <textarea id="actualizarSinopsis" placeholder="Nueva sinopsis"></textarea>
+    <input type="text" id="actualizarPoster" placeholder="Nueva URL del Póster">
+    <input type="text" id="actualizarTrailer" placeholder="Nueva URL del Tráiler">
+    <input type="text" id="actualizarReparto" placeholder="Nuevo reparto">
+    <input type="text" id="actualizarClasificacion" placeholder="Nueva clasificación">
+    <input type="text" id="actualizarIdioma" placeholder="Nuevo idioma">
+    <input type="text" id="actualizarDirector" placeholder="Nuevo director">
+    <input type="text" id="actualizarDuracion" placeholder="Nueva duración">
+    <input type="text" id="actualizarGenero" placeholder="Nuevo género">
+    <input type="date" id="actualizarFechaEstreno" placeholder="Nueva fecha de estreno">
+
+    <button onclick="actualizarPelicula()">Actualizar</button>
+    <button onclick="cerrarModal('modalActualizar')">Cancelar</button>
+  </div>
+</div>
+
+
+  <script src="/src/js/peliculas.js"></script>
+</body>
+</html>

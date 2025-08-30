@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Salas</title>
+  <link rel="stylesheet" href="/css/salas.css">
+</head>
+<body>
+  <div class="header-salas">
+    <button onclick="openCrearSalaModal()">CREAR</button>
+    <button onclick="openEliminarSalaModal()">ELIMINAR</button>
+    <button onclick="openActualizarSalaModal()">ACTUALIZAR</button>
+  </div>
+
+  <div class="list-container" id="listaSalas"></div>
+
+  <!-- MODAL CREAR -->
+  <div id="crearSalaModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCrearSalaModal()">&times;</span>
+      <h2>Crear Sala</h2>
+      <input type="text" id="codigoSala" placeholder="Código de la sala">
+      <input type="text" id="nombreSala" placeholder="Nombre de sala">
+      <input type="number" id="numSillas" placeholder="Número de sillas">
+      <select id="cineAsociadoSelect">
+        <option disabled selected>Seleccione un cine</option>
+      </select>
+      <button onclick="crearSala()">✓ Crear</button>
+    </div>
+  </div>
+
+  <!-- MODAL ELIMINAR -->
+  <div id="eliminarSalaModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeEliminarSalaModal()">&times;</span>
+      <h2>Eliminar Sala</h2>
+      <input type="text" id="codigoSalaEliminar" placeholder="Código de la sala a eliminar">
+      <select id="cineEliminarSelect">
+        <option disabled selected>Seleccione el cine asociado</option>
+      </select>
+      <button onclick="eliminarSala()">🗑 Eliminar</button>
+    </div>
+  </div>
+
+  <!-- MODAL ACTUALIZAR -->
+  <div id="actualizarSalaModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeActualizarSalaModal()">&times;</span>
+      <h2>Actualizar Sala</h2>
+      <input type="text" id="codigoSalaActualizar" placeholder="Código de sala" />
+      <input type="text" id="nuevoNombreSala" placeholder="Nuevo nombre de sala">
+      <input type="number" id="nuevoNumSillas" placeholder="Nuevo número de sillas">
+      <select id="nuevoCineSelect">
+        <option disabled selected>Nuevo cine (opcional)</option>
+      </select>
+      <button onclick="actualizarSala()">Actualizar</button>
+    </div>
+  </div>
+
+  <script src="/src/js/salas.js"></script>
+</body>
+</html>

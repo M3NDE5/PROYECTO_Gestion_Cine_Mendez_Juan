@@ -1,0 +1,62 @@
+body {
+  background: #5c5c5c;
+  font-family: sans-serif;
+  color: #000;
+}
+
+.header-salas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.header-salas button {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.list-container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sala-card {
+  background: #e0e0e0;
+  padding: 20px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.modal-content input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 8px;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  padding: 10px;
+}
