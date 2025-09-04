@@ -4,8 +4,10 @@ import usuario from './src/routes/usuarios.route.js';
 import cine from './src/routes/cines.route.js';
 import salas from './src/routes/salas.route.js';
 import pelicula from './src/routes/peliculas.route.js';
+import funciones from './src/routes/examen.route.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
+
 
 
 
@@ -26,6 +28,7 @@ app.use('/usuarios', usuario);
 app.use('/cines', cine);
 app.use('/salas', salas);
 app.use('/peliculas', pelicula)
+app.use('/funciones', funciones);
 
 app.use('/src', express.static(path.join(__dirname, 'src')));
 
